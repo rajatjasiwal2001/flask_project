@@ -1,0 +1,21 @@
+<h2>Data Records</h2>
+<table border="20">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>contact</th>
+        <th>college</th>
+        <th>Actions</th></tr>
+    {% for i in data %}
+    <tr>
+        <td>{{ i[0] }}</td>
+        <td>{{ i[1] }}</td>
+        <td>{{ i[2] }}</td>
+        <td>{{ i[3] }}</td>
+        <td>
+            <a href="/update/{{ data[0] }}">update</a> |
+            <a href="/delete/{{ data[0] }}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

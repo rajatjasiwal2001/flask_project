@@ -1,0 +1,8 @@
+<form action="/college_data_update/id={{ data[0] }}" method="POST">
+    <input name="name" value="{{ data[1] }}" required><br>
+    <input name="contact" value="{{ data[2] }}" required><br>
+    <input name="college" value="{{ data[3] }}" required><br>
+    <button type="submit">Update</button>
+    <button type="reset">Delete</button>
+    <a href="/coll">Back to List</a>
+</form>
