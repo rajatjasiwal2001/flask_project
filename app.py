@@ -11,7 +11,7 @@ def get_connection():
         database="student"
     )
     return conn
-
+ 
 @app.route("/")
 def home():
     return render_template("one.html")
