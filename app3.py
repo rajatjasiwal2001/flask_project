@@ -12,7 +12,7 @@ def mviet():
     return render_template("mviet.html")
 
 
-@app.route("/college_data",methods=["post"])
+@app.route("/college_data",methods=["post"]) 
 def college_data():
     conn=connection()
     id=request.form["id"]
